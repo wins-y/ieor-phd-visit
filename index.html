@@ -86,8 +86,8 @@ body{font-family:'Source Sans 3',system-ui,sans-serif;background:var(--bg);color
 
 <script>
 // *** PASTE YOUR GOOGLE APPS SCRIPT DEPLOYMENT URL HERE ***
-var API_URL = "https://script.google.com/macros/s/AKfycbya9olH_t0k6SCWUp2_NogYwtC2ZigwmD9eoy6Ztf7dapigt_i1Xn8ujeumboagTaX6/exec";
-var API_CONFIGURED = true;
+var API_URL = "YOUR_APPS_SCRIPT_URL_HERE";
+var API_CONFIGURED = false;
 </script>
 
 <div class="header">
@@ -207,7 +207,7 @@ function renderBookView() {
   }
 
   h += '<div class="info">Select a faculty member to see their available time slots. ' +
-       'Click an open slot to book a 30-minute 1:1 meeting. You can book meetings with multiple faculty members. Please start with a max of two (2) bookings to help keep slots available for others.</div>';
+       'Click an open slot to book a 30-minute 1:1 meeting. You can book meetings with multiple faculty members.</div>';
 
   h += '<div class="select-wrap">' +
        '<label>Choose a faculty member</label>' +
@@ -233,6 +233,12 @@ function renderBookView() {
       h += '<div class="fac-header"><div class="fac-name">' + esc(fac.name) + '</div>';
       if (fac.website) {
         h += '<div class="fac-link"><a href="' + esc(fac.website) + '" target="_blank">View faculty page &rarr;</a></div>';
+      }
+      if (fac.email) {
+        h += '<div class="fac-link" style="color:var(--text2)"><a href="mailto:' + esc(fac.email) + '">' + esc(fac.email) + '</a></div>';
+      }
+      if (fac.room) {
+        h += '<div class="fac-link" style="color:var(--text2)">Room: ' + esc(fac.room) + '</div>';
       }
       h += '</div>';
       h += '<div class="slots-label">Available slots (' + config.slotDuration + ' min each)</div>';
