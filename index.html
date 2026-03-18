@@ -17,8 +17,6 @@
   --radius:8px;--radius-lg:12px;
 }
 body{font-family:'Source Sans 3',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.55;min-height:100vh}
-
-/* Header */
 .header{background:var(--surface);border-bottom:1px solid var(--border);padding:1rem 1.5rem;position:sticky;top:0;z-index:100}
 .header-inner{max-width:820px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem}
 .header h1{font-size:1.1rem;font-weight:600}
@@ -27,46 +25,29 @@ body{font-family:'Source Sans 3',system-ui,sans-serif;background:var(--bg);color
 .tab{padding:.35rem .9rem;border:none;background:0;border-radius:6px;font:inherit;font-size:.82rem;font-weight:500;color:var(--text2);cursor:pointer;transition:.15s}
 .tab:hover{color:var(--text)}
 .tab.on{background:var(--surface);color:var(--text);box-shadow:0 1px 3px rgba(0,0,0,.08)}
-
-/* Main */
 .main{max-width:820px;margin:0 auto;padding:1.5rem}
-
-/* Info banner */
 .info{background:var(--accent-lt);border:1px solid #c2d3e8;border-radius:var(--radius-lg);padding:.9rem 1.1rem;margin-bottom:1.25rem;font-size:.85rem;color:var(--accent-dk);line-height:1.6}
-
-/* Select faculty dropdown */
 .select-wrap{margin-bottom:1.25rem}
 .select-wrap label{display:block;font-size:.8rem;font-weight:500;color:var(--text2);margin-bottom:.35rem}
 .select-wrap select{width:100%;max-width:400px;padding:.55rem .75rem;border:1px solid var(--border);border-radius:var(--radius);font:inherit;font-size:.92rem;background:var(--surface);color:var(--text);cursor:pointer;appearance:auto}
 .select-wrap select:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-lt)}
-
-/* Faculty card */
 .fac-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.25rem;margin-bottom:1.5rem}
 .fac-header{margin-bottom:1rem}
 .fac-name{font-size:1.05rem;font-weight:600}
-.fac-area{font-size:.82rem;color:var(--text2);margin-top:.15rem}
-
-/* Slot grid */
+.fac-link{font-size:.82rem;margin-top:.2rem}
+.fac-link a{color:var(--accent);text-decoration:none}
+.fac-link a:hover{text-decoration:underline}
 .slots-label{font-size:.78rem;font-weight:500;color:var(--text2);text-transform:uppercase;letter-spacing:.04em;margin-bottom:.6rem}
 .slots{display:flex;flex-wrap:wrap;gap:.45rem}
-.slot{
-  display:inline-flex;align-items:center;justify-content:center;
-  min-width:90px;padding:.45rem .65rem;border-radius:var(--radius);
-  font-size:.8rem;font-weight:500;border:1px solid transparent;
-  cursor:default;transition:.15s;text-align:center;
-}
+.slot{display:inline-flex;align-items:center;justify-content:center;min-width:90px;padding:.45rem .65rem;border-radius:var(--radius);font-size:.8rem;font-weight:500;border:1px solid transparent;cursor:default;transition:.15s;text-align:center}
 .slot-open{background:var(--green-lt);color:var(--green);border-color:var(--green-bd);cursor:pointer}
 .slot-open:hover{background:#d0eddb;transform:translateY(-1px);box-shadow:0 2px 6px rgba(0,0,0,.06)}
 .slot-booked{background:var(--amber-lt);color:var(--amber);border-color:var(--amber-bd)}
 .slot-unavail{background:var(--gray-lt);color:var(--text3);font-weight:400}
 .slot-yours{background:var(--accent-lt);color:var(--accent);border-color:#a0bfe0;font-weight:600}
-
-/* Legend */
 .legend{display:flex;gap:1.1rem;flex-wrap:wrap;font-size:.78rem;color:var(--text2);margin-bottom:1.25rem}
 .legend-i{display:flex;align-items:center;gap:.35rem}
 .legend-s{width:13px;height:13px;border-radius:3px;border:1px solid var(--border)}
-
-/* Modal */
 .overlay{position:fixed;inset:0;background:rgba(0,0,0,.35);display:flex;align-items:center;justify-content:center;z-index:1000;padding:1rem}
 .modal{background:var(--surface);border-radius:14px;padding:1.5rem;width:100%;max-width:400px;box-shadow:0 20px 60px rgba(0,0,0,.15)}
 .modal h2{font-size:1rem;font-weight:600;margin-bottom:.2rem}
@@ -74,8 +55,6 @@ body{font-family:'Source Sans 3',system-ui,sans-serif;background:var(--bg);color
 .modal label{display:block;font-size:.78rem;font-weight:500;color:var(--text2);margin-bottom:.25rem}
 .modal input{width:100%;padding:.5rem .7rem;border:1px solid var(--border);border-radius:var(--radius);font:inherit;font-size:.9rem;margin-bottom:.85rem;background:var(--surface);color:var(--text)}
 .modal input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-lt)}
-
-/* Buttons */
 .btn-row{display:flex;gap:.5rem;justify-content:flex-end;margin-top:.5rem}
 .btn{padding:.45rem 1rem;border:1px solid var(--border);border-radius:var(--radius);font:inherit;font-size:.84rem;font-weight:500;cursor:pointer;transition:.15s;background:var(--surface);color:var(--text)}
 .btn:hover{background:var(--bg)}
@@ -84,53 +63,31 @@ body{font-family:'Source Sans 3',system-ui,sans-serif;background:var(--bg);color
 .btn-d{color:var(--red);border-color:var(--red)}
 .btn-d:hover{background:var(--red-lt)}
 .btn:disabled{opacity:.4;cursor:default}
-
-/* Confirmation */
 .confirm-box{background:var(--green-lt);border:1px solid var(--green-bd);border-radius:var(--radius-lg);padding:1.25rem;margin-bottom:1.25rem;text-align:center}
 .confirm-box .code{font-size:1.7rem;font-weight:700;letter-spacing:.12em;color:var(--green);margin:.4rem 0}
 .confirm-box p{font-size:.83rem;color:var(--text2)}
-
-/* Lookup */
 .lookup{max-width:480px}
 .lookup input{width:100%;padding:.55rem .75rem;border:1px solid var(--border);border-radius:var(--radius);font:inherit;font-size:.9rem;margin-bottom:.6rem;background:var(--surface);color:var(--text)}
 .lookup input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-lt)}
 .booking-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:.85rem 1rem;margin-bottom:.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem}
 .booking-card .bc-info{font-size:.88rem}
 .booking-card .bc-info strong{font-weight:600}
-.booking-card .bc-code{font-size:.75rem;color:var(--text3);font-family:monospace}
-
-/* Toast */
 .toast{position:fixed;bottom:1.5rem;left:50%;transform:translateX(-50%);padding:.6rem 1.2rem;border-radius:var(--radius);font-size:.85rem;font-weight:500;color:#fff;z-index:2000;animation:slideup .3s;pointer-events:none}
 .toast-ok{background:var(--green)}
 .toast-err{background:var(--red)}
 @keyframes slideup{from{opacity:0;transform:translateX(-50%) translateY(10px)}to{opacity:1;transform:translateX(-50%) translateY(0)}}
-
-/* Loading */
 .loading{text-align:center;padding:4rem 1rem;color:var(--text2);font-size:.95rem}
 .spin{display:inline-block;width:20px;height:20px;border:2px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin .6s linear infinite;margin-bottom:.75rem}
 @keyframes spin{to{transform:rotate(360deg)}}
-
-/* Empty */
 .empty{text-align:center;padding:2.5rem 1rem;color:var(--text3);font-size:.88rem}
-
-/* Admin */
-.admin-section{margin-bottom:2rem}
-.admin-section h3{font-size:.95rem;font-weight:600;margin-bottom:.75rem}
-.admin-table{width:100%;border-collapse:collapse;font-size:.83rem;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius)}
-.admin-table th{text-align:left;padding:.5rem .7rem;background:var(--bg);border-bottom:1px solid var(--border);font-weight:500;font-size:.75rem;text-transform:uppercase;letter-spacing:.03em;color:var(--text2)}
-.admin-table td{padding:.45rem .7rem;border-bottom:1px solid var(--border)}
-.admin-table tr:last-child td{border-bottom:none}
 </style>
 </head>
 <body>
 
-<!-- ========== CONFIGURATION ========== -->
 <script>
 // *** PASTE YOUR GOOGLE APPS SCRIPT DEPLOYMENT URL HERE ***
-var API_URL = "https://script.google.com/macros/s/AKfycbwAiiwGrqr0pb6DE4YS4pDgzTdWR-qMbqI5tzk9_1cfY59VHp-bxoH5u4FMNbgjxsyI/exec";
-
-// Set to true once you've configured API_URL
-var API_CONFIGURED = true;
+var API_URL = "YOUR_APPS_SCRIPT_URL_HERE";
+var API_CONFIGURED = false;
 </script>
 
 <div class="header">
@@ -153,15 +110,12 @@ var API_CONFIGURED = true;
 <div id="toast-container"></div>
 
 <script>
-// ========== STATE ==========
 var config = null;
-var bookedSlots = []; // [{faculty, time, status:"booked"}]
+var bookedSlots = [];
 var currentTab = "book";
 var selectedFaculty = "";
-var studentEmail = ""; // Remembered for "yours" highlighting
 var confirmationData = null;
 
-// ========== INIT ==========
 window.addEventListener("DOMContentLoaded", function() {
   if (!API_CONFIGURED) {
     document.getElementById("app").innerHTML =
@@ -193,35 +147,33 @@ function loadAll() {
 }
 
 // ========== API ==========
-function apiFetch(method, action, body) {
+
+function apiFetch(method, action, params) {
   var url = API_URL + "?action=" + encodeURIComponent(action);
-  var opts = { method: method, redirect: "follow" };
-  if (method === "POST") {
-    opts.headers = { "Content-Type": "text/plain" }; // Apps Script CORS workaround
-    opts.body = JSON.stringify(body);
+  if (params) {
+    for (var k in params) url += "&" + k + "=" + encodeURIComponent(params[k]);
   }
-  if (method === "GET" && body) {
-    for (var k in body) url += "&" + k + "=" + encodeURIComponent(body[k]);
-  }
-  return fetch(url).then(function(r) {
-    // Apps Script redirects on GET; for POST we send as text/plain
-    return r.json();
-  }).catch(function() {
-    // Handle redirect for GET
-    return fetch(url, { redirect: "follow" }).then(function(r){ return r.json(); });
-  });
+  return fetch(url, { method: "GET", redirect: "follow" })
+    .then(function(r) {
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      return r.json();
+    });
 }
 
 function apiPost(action, body) {
   return fetch(API_URL, {
     method: "POST",
     redirect: "follow",
-    headers: { "Content-Type": "text/plain" },
+    headers: { "Content-Type": "text/plain;charset=utf-8" },
     body: JSON.stringify(Object.assign({ action: action }, body))
-  }).then(function(r){ return r.json(); });
+  }).then(function(r) {
+    if (!r.ok) throw new Error("HTTP " + r.status);
+    return r.json();
+  });
 }
 
 // ========== TABS ==========
+
 function switchTab(tab) {
   currentTab = tab;
   confirmationData = null;
@@ -232,6 +184,7 @@ function switchTab(tab) {
 }
 
 // ========== RENDER ==========
+
 function render() {
   var app = document.getElementById("app");
   if (currentTab === "book") {
@@ -244,33 +197,28 @@ function render() {
 function renderBookView() {
   var h = "";
 
-  // Confirmation banner
   if (confirmationData) {
     h += '<div class="confirm-box">' +
          '<p>Booking confirmed!</p>' +
          '<div class="code">' + esc(confirmationData.code) + '</div>' +
          '<p><strong>' + esc(confirmationData.faculty) + '</strong> at ' + esc(confirmationData.time) + '</p>' +
-         '<p style="margin-top:.5rem">Save this code to view or cancel your bookings.</p>' +
+         '<p style="margin-top:.5rem">This is your confirmation code for all bookings. Use it with your email to view or cancel.</p>' +
          '</div>';
   }
 
-  // Instructions
   h += '<div class="info">Select a faculty member to see their available time slots. ' +
-       'Click an open slot to book a 1:1 meeting. You can book meetings with multiple faculty members. ' +
-       'Save your confirmation code to manage your bookings later.</div>';
+       'Click an open slot to book a 30-minute 1:1 meeting. You can book meetings with multiple faculty members.</div>';
 
-  // Faculty dropdown
   h += '<div class="select-wrap">' +
        '<label>Choose a faculty member</label>' +
        '<select id="fac-select" onchange="onSelectFaculty(this.value)">' +
        '<option value="">— Select faculty —</option>';
   config.faculty.forEach(function(f) {
     var sel = f.name === selectedFaculty ? " selected" : "";
-    h += '<option value="' + esc(f.name) + '"' + sel + '>' + esc(f.name) + ' — ' + esc(f.area) + '</option>';
+    h += '<option value="' + esc(f.name) + '"' + sel + '>' + esc(f.name) + '</option>';
   });
   h += '</select></div>';
 
-  // Legend
   h += '<div class="legend">' +
        '<div class="legend-i"><div class="legend-s" style="background:var(--green-lt);border-color:var(--green-bd)"></div> Open</div>' +
        '<div class="legend-i"><div class="legend-s" style="background:var(--amber-lt);border-color:var(--amber-bd)"></div> Booked</div>' +
@@ -278,25 +226,23 @@ function renderBookView() {
        '<div class="legend-i"><div class="legend-s" style="background:var(--accent-lt);border-color:#a0bfe0"></div> Your booking</div>' +
        '</div>';
 
-  // Faculty card with slots
   if (selectedFaculty) {
     var fac = config.faculty.find(function(f){ return f.name === selectedFaculty; });
     if (fac) {
       h += '<div class="fac-card">';
       h += '<div class="fac-header"><div class="fac-name">' + esc(fac.name) + '</div>';
-      h += '<div class="fac-area">' + esc(fac.area) + '</div></div>';
+      if (fac.website) {
+        h += '<div class="fac-link"><a href="' + esc(fac.website) + '" target="_blank">View faculty page &rarr;</a></div>';
+      }
+      h += '</div>';
       h += '<div class="slots-label">Available slots (' + config.slotDuration + ' min each)</div>';
       h += '<div class="slots">';
+
+      var myBookings = getMyBookingsLocal();
 
       config.timeSlots.forEach(function(t) {
         var isUnavail = fac.unavailable && fac.unavailable.indexOf(t) !== -1;
         var isBooked = bookedSlots.some(function(b){ return b.faculty === fac.name && b.time === t; });
-        var isMine = studentEmail && bookedSlots.some(function(b){
-          // We don't have email in public bookings, so use local memory
-          return false;
-        });
-        // Check local memory for "yours"
-        var myBookings = getMyBookingsLocal();
         var isYours = myBookings.some(function(mb){ return mb.faculty === fac.name && mb.time === t; });
 
         if (isUnavail) {
@@ -321,8 +267,9 @@ function renderBookView() {
 
 function renderMyView() {
   var h = '<div class="lookup">';
-  h += '<div class="info">Enter your confirmation code or email address to look up your bookings.</div>';
-  h += '<input type="text" id="lookup-input" placeholder="Confirmation code or email" onkeydown="if(event.key===\'Enter\')doLookup()">';
+  h += '<div class="info">Enter your email and confirmation code to view your bookings.</div>';
+  h += '<input type="email" id="lookup-email" placeholder="Your email">';
+  h += '<input type="text" id="lookup-code" placeholder="Confirmation code" style="text-transform:uppercase">';
   h += '<button class="btn btn-p" onclick="doLookup()" style="margin-bottom:1.25rem">Look up</button>';
   h += '<div id="lookup-results"></div>';
   h += '</div>';
@@ -354,11 +301,11 @@ function openBookModal(faculty, time) {
   overlay.innerHTML =
     '<div class="modal">' +
     '<h2>Book meeting</h2>' +
-    '<div class="sub">' + esc(faculty) + ' — ' + esc(time) + ' (' + config.slotDuration + ' min)</div>' +
+    '<div class="sub">' + esc(faculty) + ' &mdash; ' + esc(time) + ' (' + config.slotDuration + ' min)</div>' +
     '<label>Your name</label>' +
     '<input type="text" id="book-name" value="' + esc(saved.name) + '" placeholder="Jane Smith">' +
     '<label>Your email</label>' +
-    '<input type="email" id="book-email" value="' + esc(saved.email) + '" placeholder="js1234@columbia.edu">' +
+    '<input type="email" id="book-email" value="' + esc(saved.email) + '" placeholder="js1234@university.edu">' +
     '<div class="btn-row">' +
     '<button class="btn" onclick="closeModal()">Cancel</button>' +
     '<button class="btn btn-p" id="book-submit" onclick="submitBooking(\'' + esc(faculty) + "','" + esc(time) + '\')">Book this slot</button>' +
@@ -387,13 +334,11 @@ function submitBooking(faculty, time) {
   apiPost("book", { faculty: faculty, time: time, name: name, email: email })
     .then(function(res) {
       if (res.error) { toast(res.error, "err"); btn.disabled = false; btn.textContent = "Book this slot"; return; }
-      // Save locally
       saveMyInfo(name, email);
-      addMyBookingLocal({ faculty: faculty, time: time, code: res.code });
-      studentEmail = email;
+      saveMyCode(res.code);
+      addMyBookingLocal({ faculty: faculty, time: time });
       confirmationData = { code: res.code, faculty: faculty, time: time };
       closeModal();
-      // Refresh bookings
       apiFetch("GET", "getBookings").then(function(b){
         bookedSlots = b || [];
         render();
@@ -404,80 +349,90 @@ function submitBooking(faculty, time) {
 }
 
 function doLookup() {
-  var q = document.getElementById("lookup-input").value.trim();
-  if (!q) { toast("Enter a code or email.", "err"); return; }
+  var email = (document.getElementById("lookup-email").value || "").trim();
+  var code = (document.getElementById("lookup-code").value || "").trim();
+  if (!email || !code) { toast("Please enter both email and code.", "err"); return; }
 
-  var url = API_URL + "?action=lookup&q=" + encodeURIComponent(q);
-  fetch(url, { redirect: "follow" }).then(function(r){ return r.json(); }).then(function(results) {
+  apiFetch("GET", "lookup", { email: email, code: code }).then(function(res) {
     var el = document.getElementById("lookup-results");
-    if (!results || results.length === 0) {
-      el.innerHTML = '<div class="empty">No active bookings found for that code or email.</div>';
+    if (res.error) {
+      el.innerHTML = '<div class="empty">' + esc(res.error) + '</div>';
       return;
     }
-    var h = '<p style="font-size:.85rem;color:var(--text2);margin-bottom:.75rem">Found ' + results.length + ' booking(s):</p>';
-    results.forEach(function(b) {
+    var bookings = res.bookings || [];
+    if (bookings.length === 0) {
+      el.innerHTML = '<div class="empty">No active bookings found.</div>';
+      return;
+    }
+    // Save locally
+    saveMyInfo(bookings[0].name, email);
+    saveMyCode(code);
+    localStorage.setItem("phd-visit-bookings", JSON.stringify(
+      bookings.map(function(b){ return { faculty: b.faculty, time: b.time }; })
+    ));
+
+    var h = '<p style="font-size:.85rem;color:var(--text2);margin-bottom:.75rem">You have ' + bookings.length + ' booking(s):</p>';
+    bookings.forEach(function(b) {
       h += '<div class="booking-card">' +
-           '<div class="bc-info"><strong>' + esc(b.faculty) + '</strong> — ' + esc(b.time) +
-           '<br><span class="bc-code">Code: ' + esc(b.code) + '</span></div>' +
-           '<button class="btn btn-d" onclick="doCancelBooking(\'' + esc(b.code) + '\',this)">Cancel</button>' +
+           '<div class="bc-info"><strong>' + esc(b.faculty) + '</strong> &mdash; ' + esc(b.time) + '</div>' +
+           '<button class="btn btn-d" onclick="doCancelBooking(\'' + esc(b.faculty) + "','" + esc(b.time) + '\',this)">Cancel</button>' +
            '</div>';
     });
     el.innerHTML = h;
-
-    // Also update local memory
-    var email = results[0].email;
-    saveMyInfo(results[0].name, email);
-    localStorage.setItem("phd-visit-bookings", JSON.stringify(
-      results.map(function(b){ return { faculty: b.faculty, time: b.time, code: b.code }; })
-    ));
   }).catch(function(err) {
     document.getElementById("lookup-results").innerHTML = '<div class="empty">Error: ' + err.message + '</div>';
   });
 }
 
-function doCancelBooking(code, btn) {
-  if (!confirm("Cancel this booking?")) return;
+function doCancelBooking(faculty, time, btn) {
+  if (!confirm("Cancel your meeting with " + faculty + " at " + time + "?")) return;
   btn.disabled = true;
   btn.textContent = "Cancelling...";
 
-  apiPost("cancel", { code: code }).then(function(res) {
+  var saved = getMyInfo();
+  var code = getMyCode();
+
+  apiPost("cancel", { email: saved.email, code: code, faculty: faculty, time: time }).then(function(res) {
     if (res.error) { toast(res.error, "err"); btn.disabled = false; btn.textContent = "Cancel"; return; }
     toast("Booking cancelled.");
-    removeMyBookingLocal(code);
-    // Refresh
+    removeMyBookingLocal(faculty, time);
     apiFetch("GET", "getBookings").then(function(b){ bookedSlots = b || []; });
-    doLookup(); // Re-run lookup
+    doLookup();
   }).catch(function(err) { toast(err.message, "err"); btn.disabled = false; btn.textContent = "Cancel"; });
 }
 
 // ========== LOCAL MEMORY ==========
-// We store bookings in localStorage so we can show "yours" on the grid
-// without exposing other students' data
 
 function getMyInfo() {
-  try {
-    return JSON.parse(localStorage.getItem("phd-visit-info") || "{}");
-  } catch(e) { return {}; }
+  try { return JSON.parse(localStorage.getItem("phd-visit-info") || "{}"); }
+  catch(e) { return {}; }
 }
 function saveMyInfo(name, email) {
   localStorage.setItem("phd-visit-info", JSON.stringify({ name: name, email: email }));
 }
+function getMyCode() {
+  try { return localStorage.getItem("phd-visit-code") || ""; }
+  catch(e) { return ""; }
+}
+function saveMyCode(code) {
+  localStorage.setItem("phd-visit-code", code);
+}
 function getMyBookingsLocal() {
-  try {
-    return JSON.parse(localStorage.getItem("phd-visit-bookings") || "[]");
-  } catch(e) { return []; }
+  try { return JSON.parse(localStorage.getItem("phd-visit-bookings") || "[]"); }
+  catch(e) { return []; }
 }
 function addMyBookingLocal(b) {
   var arr = getMyBookingsLocal();
   arr.push(b);
   localStorage.setItem("phd-visit-bookings", JSON.stringify(arr));
 }
-function removeMyBookingLocal(code) {
-  var arr = getMyBookingsLocal().filter(function(b){ return b.code !== code; });
+function removeMyBookingLocal(faculty, time) {
+  var arr = getMyBookingsLocal().filter(function(b){ return !(b.faculty === faculty && b.time === time); });
   localStorage.setItem("phd-visit-bookings", JSON.stringify(arr));
 }
 
 // ========== HELPERS ==========
+
 function esc(s) {
   if (!s) return "";
   return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;");
